@@ -37,6 +37,7 @@ editObj!:Istd
       .subscribe({
         next:res=>{
           console.log(res);
+          this.stdForm.reset()
           this._snckBarServoce.openSnackbar('The Student data Added successfully !!!')
           },
           error:err=>{
